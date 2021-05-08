@@ -41,7 +41,7 @@ class App extends Component {
     return (
       <div id="main">
         {/* Do not remove the main div */}
-        <ol>
+        <ol key="oListKey">
           {this.cityList
             .filter((cName) => cName.country === "India")
             .map((e) => (
